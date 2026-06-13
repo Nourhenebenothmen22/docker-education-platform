@@ -19,5 +19,5 @@ ghpages.publish(outDir, {
     process.exit(1);
   }
   console.log('Deploy complete!');
-  console.log('Site: https://nourhenebenothmen22.github.io/docker-master-lab/');
+  console.log('Site: https://nourhenebenothmen22.github.io/docker-education-platform/');
 });

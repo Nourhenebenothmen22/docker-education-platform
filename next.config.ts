@@ -4,8 +4,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? "/docker-master-lab" : undefined,
-  assetPrefix: isProd ? "/docker-master-lab/" : undefined,
+  basePath: isProd ? "/docker-education-platform" : undefined,
+  assetPrefix: isProd ? "/docker-education-platform/" : undefined,
   images: {
     unoptimized: true,
   },

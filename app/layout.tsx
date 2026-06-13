@@ -3,7 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n";
 
-const basePath = process.env.NODE_ENV === 'production' ? '/docker-master-lab' : '';
+const basePath = process.env.NODE_ENV === 'production' ? '/docker-education-platform' : '';
 
 const inter = Inter({
   variable: "--font-inter",
