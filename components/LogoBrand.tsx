@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslation } from '@/lib/i18n';
+import { useTranslation, assetPath } from '@/lib/i18n';
 
 interface LogoBrandProps {
   variant?: 'full' | 'compact';
@@ -18,7 +18,7 @@ export default function LogoBrand({ variant = 'full', showSubtitle = true, onCli
     <div className="flex items-center gap-2.5 group">
       <div className="relative shrink-0">
         <Image
-          src="/docker-logo.png"
+          src={assetPath('/docker-logo.png')}
           alt={language === 'fr' ? 'Logo Docker Master Lab' : 'Docker Master Lab logo'}
           width={variant === 'compact' ? 28 : 36}
           height={variant === 'compact' ? 28 : 36}
