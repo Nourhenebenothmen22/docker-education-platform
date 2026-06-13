@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Docker Master Lab" }],
   creator: "Docker Master Lab",
   icons: {
-    icon: basePath + "/docker-logo.png",
-    shortcut: basePath + "/docker-logo.png",
-    apple: basePath + "/docker-logo.png",
+    icon: [{ url: basePath + "/favicon.svg", type: "image/svg+xml" }, { url: basePath + "/docker-logo.png", sizes: "any" }],
+    shortcut: basePath + "/favicon.svg",
+    apple: basePath + "/favicon.svg",
   },
   openGraph: {
     type: "website",

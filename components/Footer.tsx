@@ -80,16 +80,25 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-slate-500 text-sm">
-            {language === 'fr'
-              ? '© 2026 Docker Master Lab — Tous droits réservés'
-              : '© 2026 Docker Master Lab — All rights reserved'}
-          </p>
-          <p className="text-slate-500 text-sm flex items-center gap-1.5">
-            {language === 'fr' ? 'Fait avec' : 'Made with'} <Heart size={14} className="text-red-400 fill-red-400" />
-            {language === 'fr' ? 'et Docker' : 'and Docker'}
-          </p>
+        <div className="mt-12 pt-6 border-t border-slate-200 flex flex-col items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-slate-500 text-sm">
+            <span className="font-medium text-slate-700">Nourhene Ben Othmen</span>
+            <span className="hidden sm:inline text-slate-300">|</span>
+            <a href="mailto:benothmennourhen8@gmail.com" className="hover:text-[#2496ED] transition-colors">benothmennourhen8@gmail.com</a>
+            <span className="hidden sm:inline text-slate-300">|</span>
+            <span>21832010</span>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-2">
+            <p className="text-slate-500 text-sm">
+              {language === 'fr'
+                ? '© 2026 Docker Master Lab — Tous droits réservés'
+                : '© 2026 Docker Master Lab — All rights reserved'}
+            </p>
+            <p className="text-slate-500 text-sm flex items-center gap-1.5">
+              {language === 'fr' ? 'Fait avec' : 'Made with'} <Heart size={14} className="text-red-400 fill-red-400" />
+              {language === 'fr' ? 'et Docker' : 'and Docker'}
+            </p>
+          </div>
         </div>
       </div>
     </footer>
