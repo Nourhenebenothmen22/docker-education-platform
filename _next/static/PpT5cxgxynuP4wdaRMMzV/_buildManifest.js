@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/docker-master-lab//_next/:path+",
-        "destination": "/docker-master-lab/_next/:path+"
+        "source": "/docker-education-platform//_next/:path+",
+        "destination": "/docker-education-platform/_next/:path+"
       }
     ],
     "fallback": []
