@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Heart, BookOpen, Terminal, Code2 } from 'lucide-react';
-import { useTranslation } from '@/lib/i18n';
+import { useTranslation, assetPath } from '@/lib/i18n';
 
 export default function Footer() {
   const { language } = useTranslation();
@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
               <div className="flex items-center gap-3 mb-4">
-              <Image src="/docker-logo.png" alt={language === 'fr' ? 'Logo Docker' : 'Docker logo'} width={40} height={40} className="object-contain" />
+              <Image src={assetPath('/docker-logo.png')} alt={language === 'fr' ? 'Logo Docker' : 'Docker logo'} width={40} height={40} className="object-contain" />
               <div>
                 <p className="font-bold text-lg text-slate-900">Docker Master Lab</p>
                 <p className="text-slate-500 text-xs">

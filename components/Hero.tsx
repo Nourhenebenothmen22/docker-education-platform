@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { contentData } from '@/data/content';
-import { useTranslation } from '@/lib/i18n';
+import { useTranslation, assetPath } from '@/lib/i18n';
 import { ArrowRight, BookOpen, Terminal, Dumbbell, Zap, Globe, Shield, TrendingUp, Cpu, Cloud } from 'lucide-react';
 
 const featureIcons = [Zap, Globe, Shield, TrendingUp, Cpu, Cloud];
@@ -229,7 +229,7 @@ export default function Hero() {
 
           {/* Docker icon watermark */}
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.04]">
-            <Image src="/docker-logo.png" alt="" width={200} height={200} />
+            <Image src={assetPath('/docker-logo.png')} alt="" width={200} height={200} />
           </div>
 
           {/* Terminal caption */}

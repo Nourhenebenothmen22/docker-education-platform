@@ -55,3 +55,11 @@ export const useTranslation = () => {
   }
   return context;
 };
+
+export function assetPath(path: string): string {
+  if (typeof window !== 'undefined') {
+    const base = (window as any).__NEXT_DATA__?.runtimeConfig?.basePath || '';
+    if (base) return base + path;
+  }
+  return process.env.NODE_ENV === 'production' ? '/docker-master-lab' + path : path;
+}
