@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath: "/docker-master-lab",
+  assetPrefix: "/docker-master-lab/",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
