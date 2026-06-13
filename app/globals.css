@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
+@theme inline {
+  --color-docker-blue: #2496ED;
+  --color-docker-dark: #0B4F8A;
+  --color-docker-light: #EAF6FF;
+  --color-docker-text: #1F2937;
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1F2937;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+[id] {
+  scroll-margin-top: 112px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #2496ED;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0B4F8A;
+}
+
+/* Section heading utility */
+.section-title {
+  @apply text-2xl sm:text-3xl font-bold text-[#0B4F8A] mb-2;
+}
+.section-subtitle {
+  @apply text-gray-500 text-base mb-8 leading-relaxed;
+}
+.section-divider {
+  @apply w-16 h-1 bg-[#2496ED] rounded-full mb-8;
+}
+
+/* Prose reset for content blocks */
+.prose-docker p {
+  @apply text-gray-700 leading-relaxed mb-4 text-sm sm:text-base;
+}
+.prose-docker h3 {
+  @apply text-lg font-bold text-[#0B4F8A] mt-6 mb-2;
+}
+.prose-docker ul {
+  @apply list-none space-y-2 mb-4;
+}
+.prose-docker ul li::before {
+  content: '→';
+  @apply text-[#2496ED] mr-2 font-bold;
 }
