@@ -3,6 +3,8 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/docker-master-lab' : '';
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -48,9 +50,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Docker Master Lab" }],
   creator: "Docker Master Lab",
   icons: {
-    icon: "/docker-logo.png",
-    shortcut: "/docker-logo.png",
-    apple: "/docker-logo.png",
+    icon: basePath + "/docker-logo.png",
+    shortcut: basePath + "/docker-logo.png",
+    apple: basePath + "/docker-logo.png",
   },
   openGraph: {
     type: "website",
