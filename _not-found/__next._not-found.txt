@@ -2,4 +2,4 @@
 2:I[39756,["/docker-master-lab/_next/static/chunks/2l725_9o9v-j9.js","/docker-master-lab/_next/static/chunks/14mumt5_n0xhi.js"],"default"]
 3:I[37457,["/docker-master-lab/_next/static/chunks/2l725_9o9v-j9.js","/docker-master-lab/_next/static/chunks/14mumt5_n0xhi.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"rBQzk4NA01XJXF_irkkxe"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"EKXOA5tbIS6ILmyaiGu74"}
